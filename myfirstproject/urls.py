@@ -20,14 +20,15 @@ from myfirstproject import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login_view),
-    path('Home/', views.Home),
+    path('', views.login_view, name='login'),
+    path('Home/', views.Home, name='home'),
     path('Aboutus/', views.Aboutus),
     path('contactus/', views.contactus),
     path('Services/', views.Services),
     path('Gallery/', views.Gallery),
     path('blog/', views.blog),
-    path('login/', views.login_view),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
     
    
 ]

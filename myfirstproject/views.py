@@ -1,4 +1,5 @@
-from django.shortcuts import render , redirect
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect, render
 
 def Home(request):
     return render(request, 'index.html')
@@ -19,18 +20,23 @@ def blog(request):
     return render(request, 'blog.html')
 
 def login_view(request):
-    error = ""
-
     if request.method == "POST":
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+        username = request.POST.get('username', '').strip()
+        password = request.POST.get('password', '')
+        user = authenticate(request, username=username, password=password)
 
-        if username == "admin" and password == "123":
-            return redirect('/Home/')
-        else:
-            error = "Invalid Username or Password"
+        if user is not None:
+            login(request, user)
+            return redirect('home')
 
-    return render(request, 'login.html', {'error': error})
+        return render(request, 'login.html', {'error': 'Invalid username or password.'})
+
+    return render(request, 'login.html')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
 
 
 

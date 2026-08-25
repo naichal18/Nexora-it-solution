@@ -7,7 +7,7 @@ A Django website for an IT solution and training business. The site includes pag
 - Django backend
 - Login page
 - Services, gallery, blog, and contact pages
-- SQLite database for local development
+- SQLite database for local development, with PostgreSQL support for production
 - Static CSS and image assets
 
 ## Run Locally
@@ -32,21 +32,23 @@ A Django website for an IT solution and training business. The site includes pag
 
 4. Open http://127.0.0.1:8000/ in a browser.
 
-## Demo Login
+## Create a Login User
 
-The current demonstration login is:
+Create a Django user locally with:
 
-- Username: `admin`
-- Password: `123`
+```powershell
+python manage.py migrate
+python manage.py createsuperuser
+```
 
-Replace this hardcoded login with Django authentication before using the site in production.
+Use the username and password you create at `/login/`. Do not commit credentials to GitHub.
 
 ## Deployment
 
 The project can be deployed on Render with:
 
 ```text
-Build command: pip install -r requirements.txt && python manage.py collectstatic --no-input
+Build command: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --no-input
 Start command: gunicorn myfirstproject.wsgi:application
 ```
 
@@ -56,6 +58,7 @@ Set these environment variables in the hosting provider:
 DEBUG=False
 SECRET_KEY=<your-private-secret-key>
 ALLOWED_HOSTS=<your-hostname>
+DATABASE_URL=<your-postgresql-connection-string>
 ```
 
 Do not commit private keys, passwords, or user data to the repository.
