@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/myfirstproject/static/CSS/aboutus.css">
+<link rel="stylesheet" href="{% static 'CSS/aboutus.css' %}">
 <title>About Us | Nexora IT Solution</title>
 
 
@@ -39,7 +40,7 @@
 <div class="container">
   <div class="about-section ">
     <div class="about-image">
-      <img src="/myfirstproject/static/image1/aboutus1.jpg">
+      <img src="{% static 'Image1/aboutus1.jpg' %}">
     </div>
     <div class="about-text">
       <h2>Who We Are</h2>
@@ -75,7 +76,7 @@
       </p>
     </div>
     <div class="about-image">
-      <img src="/myfirstproject/static/image1/aboutus2.webp">
+      <img src="{% static 'Image1/aboutus2.webp' %}">
     </div>
   </div>
 

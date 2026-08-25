@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/myfirstproject/static/CSS/home.css">
+<link rel="stylesheet" href="{% static 'CSS/home.css' %}">
 <title>Nexora IT Solution</title>
 </head>
 
@@ -50,7 +51,7 @@
 <div class="courses">
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/java.png" class="course-img">
+    <img src="{% static 'Image1/java.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>Java Course</h2>
     <p>Complete Tailwind CSS</p>
@@ -60,7 +61,7 @@
   </div>
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/python.png" class="course-img">
+    <img src="{% static 'Image1/python.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>Python / Data Analysis</h2>
     <p>Complete Tailwind CSS</p>
@@ -70,7 +71,7 @@
   </div>
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/php.png" class="course-img">
+    <img src="{% static 'Image1/php.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>PHP Development</h2>
     <p>Complete Tailwind CSS</p>
@@ -80,7 +81,7 @@
   </div>
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/c language.png" class="course-img">
+    <img src="{% static 'Image1/c language.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>C Language</h2>
     <p>Complete Tailwind CSS</p>
@@ -90,7 +91,7 @@
   </div>
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/c++.png" class="course-img">
+    <img src="{% static 'Image1/C++.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>C++ Language</h2>
     <p>Complete Tailwind CSS</p>
@@ -100,7 +101,7 @@
   </div>
 
   <div class="course-card">
-    <img src="/myfirstproject/static/image1/mysql.png" class="course-img">
+    <img src="{% static 'Image1/mysql.png' %}" class="course-img">
     <h3>Free course</h3>
     <h2>MySQL Database</h2>
     <p>Complete Tailwind CSS</p>
@@ -125,7 +126,7 @@
   <div class="career-grid">
 
     <div>
-       <img src="/myfirstproject/static/image1/coding language.jpg">
+      <img src="{% static 'Image1/coding language.jpg' %}">
       <h3>Coding Language</h3>
       <p>
         Learn the fundamentals of C and C++ programming.<br>
@@ -135,7 +136,7 @@
     </div>
 
     <div>
-      <img src="/myfirstproject/static/image1/data science.jpg">
+      <img src="{% static 'Image1/data science.jpg' %}">
       <h3>Data Science</h3>
       <p>
         Python fundamentals with practical data analytics concepts.<br>
@@ -145,7 +146,7 @@
     </div>
 
     <div>
-      <img src="/myfirstproject/static/image1/web development.jpg">
+      <img src="{% static 'Image1/web development.jpg' %}">
       <h3>Web Development</h3>
       <p>
         HTML and CSS fundamentals with frontend basics.<br>
@@ -171,7 +172,7 @@
   <div class="classroom-grid">
 
     <div class="classroom-card">
-      <img src="/myfirstproject/static/image1/classroom1.jpg">
+      <img src="{% static 'Image1/classroom1.jpg' %}">
 
       <h4>Free Course</h4>
       <h3>Class Room 1</h3>
@@ -184,7 +185,7 @@
     </div>
 
     <div class="classroom-card">
-      <img src="/myfirstproject/static/image1/classroom2.jpg">
+      <img src="{% static 'Image1/classroom2.jpg' %}">
       <h4>Free Course</h4>
       <h3>Class Room 2</h3>
       <p>
@@ -196,7 +197,7 @@
     </div>
 
     <div class="classroom-card">
-      <img src="/myfirstproject/static/image1/classroom3.jpg">
+      <img src="{% static 'Image1/classroom3.jpg' %}">
       <h4>Free Course</h4>
       <h3>Class Room 3</h3>
       <p>
@@ -220,7 +221,7 @@
 
   <div class="staff-grid">
     <div class="staff-card">
-      <img src="/myfirstproject/static/image1/maths.jpg">
+      <img src="{% static 'Image1/maths.jpg' %}">
       <h3>Maths / Science</h3>
       <h4>Senior Faculty</h4>
       <p>
@@ -229,7 +230,7 @@
         Exam-focused approach.
       </p></div>
     <div class="staff-card">
-    <img src="/myfirstproject/static/image1/physics.jpg">
+    <img src="{% static 'Image1/physics.jpg' %}">
     <h3>Biology / Physics</h3>  
     <h4>Subject Expert</h4>
       <p>
@@ -238,7 +239,7 @@
         Student-friendly style.
       </p></div>
     <div class="staff-card">
-    <img src="/myfirstproject/static/image1/chemistry.jpg">
+    <img src="{% static 'Image1/chemistry.jpg' %}">
       <h3>Chemistry / English</h3>
     <h4>Language & Science Trainer</h4>
       <p>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/myfirstproject/static/CSS/blog.css">
+<link rel="stylesheet" href="{% static 'CSS/blog.css' %}">
 <title>Blog | Nexora IT Solution</title>
 
 
@@ -46,7 +47,7 @@
 <!-- FEATURED BLOG -->
 <div class="featured-blog">
   <div class="featured-image">
-    <img src="/myfirstproject/static/image1/blog.png  ">
+    <img src="{% static 'Image1/blog.png' %}">
   </div>
   <div class="featured-content">
     <span>FEATURED</span>
@@ -64,7 +65,7 @@
 <div class="blog-grid">
 
   <div class="blog-card">
-    <div class="blog-image"><img src="/myfirstproject/static/image1/blog(c and c++).png"></div>
+    <div class="blog-image"><img src="{% static 'Image1/blog(c and c++).png' %}"></div>
     <span>Programming</span>
     <h3>Why Learn C & C++ First?</h3>
     <p>Understand how core languages build strong logic for future technologies.</p>
@@ -72,7 +73,7 @@
   </div>
 
   <div class="blog-card">
-    <div class="blog-image"><img src="/myfirstproject/static/image1/blog(HTML & CSS Roadmap)1.jpg"></div>
+    <div class="blog-image"><img src="{% static 'Image1/blog(HTML & CSS Roadmap)1.jpg' %}"></div>
     <span>Web Development</span>
     <h3>HTML & CSS Roadmap</h3>
     <p>A beginner-friendly guide to designing clean and responsive websites.</p>
@@ -80,7 +81,7 @@
   </div>
 
   <div class="blog-card">
-    <div class="blog-image"><img src="/myfirstproject/static/image1/blog(Skills Companies Actually Want)1.jpg"></div>
+    <div class="blog-image"><img src="{% static 'Image1/blog(Skills Companies Actually Want)1.jpg' %}"></div>
     <span>Career</span>
     <h3>Skills Companies Actually Want</h3>
     <p>Learn what matters more than certificates in real IT jobs.</p>

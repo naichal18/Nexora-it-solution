@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/myfirstproject/static/CSS/gallery.css">
+<link rel="stylesheet" href="{% static 'CSS/gallery.css' %}">
 <title>Gallery | Nexora IT Solution</title>
 </head>
 
@@ -32,32 +33,32 @@
   <div class="gallery-grid">
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Classroom Training).jpg" >
+      <img src="{% static 'Image1/gallery(Classroom Training).jpg' %}" >
       <div class="gallery-caption">Classroom Training</div>
     </div>
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Computer Lab Session).jpg">
+      <img src="{% static 'Image1/gallery(Computer Lab Session).jpg' %}">
       <div class="gallery-caption">Computer Lab Session</div>
     </div>
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Students Coding)1.jpg">
+      <img src="{% static 'Image1/gallery(Students Coding)1.jpg' %}">
       <div class="gallery-caption">Students Coding</div>
     </div>
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Faculty Teaching)1.jpg" >
+      <img src="{% static 'Image1/gallery(Faculty Teaching)1.jpg' %}" >
       <div class="gallery-caption">Faculty Teaching</div>
     </div>
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Group Discussion)1.jpg">
+      <img src="{% static 'Image1/gallery(Group Discussion)1.jpg' %}">
       <div class="gallery-caption">Group Discussion</div>
     </div>
 
     <div class="gallery-card">
-      <img src="/myfirstproject/static/image1/gallery(Project Work)1.jpg">
+      <img src="{% static 'Image1/gallery(Project Work)1.jpg' %}">
       <div class="gallery-caption">Project Work</div>
     </div>
 

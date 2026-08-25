@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/myfirstproject/static/CSS/service.css">
+<link rel="stylesheet" href="{% static 'CSS/service.css' %}">
 <title>Our Services | Nexora IT Solution</title>
 </head>
 
@@ -40,7 +41,7 @@
 
     <div class="service-card">
       <div class="service-image">
-        <img src="/myfirstproject/static/image1/services(program training)1.jpg"></div>
+        <img src="{% static 'Image1/services(program training)1.jpg' %}"></div>
       <h3>Programming Training</h3>
       <p>
         Learn C, C++, Java and Python from scratch with logic building  
@@ -50,7 +51,7 @@
 
     <div class="service-card">
       <div class="service-image">
-        <img src="/myfirstproject/static/image1/services(web development)1.jpg"></div>
+        <img src="{% static 'Image1/services(web development)1.jpg' %}"></div>
       <h3>Web Development</h3>
       <p>
         Complete frontend development training using HTML, CSS and  
@@ -59,7 +60,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-image"><img src="/myfirstproject/static/image1/web development.jpg"></div>
+      <div class="service-image"><img src="{% static 'Image1/web development.jpg' %}"></div>
       <h3>Data Analytics</h3>
       <p>
         Python-based data analytics training covering real datasets,  
@@ -69,7 +70,7 @@
 
     <div class="service-card">
       <div class="service-image">
-        <img src="/myfirstproject/static/image1/web development1.jpg"></div>
+        <img src="{% static 'Image1/web development1.jpg' %}"></div>
       <h3>Career Guidance</h3>
       <p>
         One-to-one career guidance, roadmap planning and IT career  
@@ -78,7 +79,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-image"><img src="/myfirstproject/static/image1/services(practical workshops)1.jpg"></div>
+      <div class="service-image"><img src="{% static 'Image1/services(Practical Workshops)1.jpg' %}"></div>
       <h3>Practical Workshops</h3>
       <p>
         Hands-on workshops and live projects to build confidence  
@@ -87,7 +88,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-image"><img src="/myfirstproject/static/image1/services(project support)1.jpg"></div>
+      <div class="service-image"><img src="{% static 'Image1/services(Project Support)1.jpg' %}"></div>
       <h3>Project Support</h3>
       <p>
         Final year project guidance, documentation support and  
