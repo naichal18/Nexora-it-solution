@@ -1,0 +1,271 @@
+/* ========== GLOBAL ========== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial, sans-serif;
+  background:#f8fafc;
+  color:#1f2937;
+}
+
+/* ========== NAVBAR ========== */
+.navbar{
+  background:#1e3a8a;
+  padding:14px;
+  text-align:center;
+}
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn{
+  background:#facc15;          /* yellow */
+  color:#000;
+  padding:8px 16px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.logout-btn:hover{
+  background:#eab308;          /* darker yellow */
+  color:#000;
+}
+
+/* ========== HERO ========== */
+.hero{
+  display:flex;
+  padding:50px;
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  color:white;
+}
+.hero-left{width:50%;}
+.hero-left h1{font-size:34px;margin-bottom:16px;}
+.hero-left p{line-height:1.6;margin-bottom:22px;}
+.hero-buttons button{
+  padding:11px 20px;
+  border:none;
+  margin-right:12px;
+  font-size:15px;
+  cursor:pointer;
+  border-radius:4px;
+}
+.btn-free{background:#f59e0b;color:black;font-weight:bold;}
+.btn-blog{background:#111827;color:white;}
+.hero-right{
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.company-box{
+  text-align:center;
+  background:rgba(255,255,255,0.15);
+  padding:32px;
+  border-radius:12px;
+}
+.company-box h2{font-size:28px;margin-bottom:12px;}
+.company-box p{margin-bottom:20px;line-height:1.5;}
+.company-box button{
+  padding:10px 24px;
+  border:none;
+  background:#111827;
+  color:white;
+}
+
+/* ========== COURSES ========== */
+.courses{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  padding:45px;
+  background:white;
+}
+.courses h3{font-size:14px;color:#2563eb;}
+.courses h2{font-size:20px;margin:4px 0;}
+.courses p{font-size:14px;color:#6b7280;line-height:1.25;}
+.career-container{
+  width:100%;
+}
+/* ================= COURSE IMAGE ================= */
+.courses{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  padding:45px;
+  background:white;
+}
+
+.course-card{
+  text-align:center;
+}
+
+.course-img{
+  width:160px;
+  height:80px;
+  object-fit:contain;
+  margin:0 auto 12px;
+  display:block;
+}
+
+
+/* ================= SECTION WRAPPER ================= */
+.section-wrapper{
+  width:100%;
+  padding:0 45px;
+}
+
+
+/* ========== COMMON 3D HEADER ========== */
+.section-header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 22px;
+  margin-bottom:25px;
+  background:#ffffff;
+  border-radius:6px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+
+.section-header h2{font-size:22px;color:#e11d48;}
+.section-header button{
+
+  padding:8px 18px;
+  background:#e11d48;
+  color:white;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+/* ========== CAREER COURSE ========== */
+.career-section{padding:45px;}
+.career-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+/* ================= CAREER COURSE IMAGE ================= */
+.career-img{
+  width:100%;
+  height:180px;
+  object-fit:cover;     /*image cut ho sakti hai*/
+  border-radius:8px;
+  margin-bottom:14px;
+}
+
+.career-card{
+  padding:30px 20px;
+  color:white;
+  border-radius:6px;
+  text-align:center;
+}
+.career-card h3{font-size:22px;margin-bottom:10px;}
+.career-card p{font-size:14px;line-height:1.4;}
+.bg-blue{background:linear-gradient(135deg,#1e3a8a,#2563eb);}
+.bg-purple{background:linear-gradient(135deg,#6d28d9,#7c3aed);}
+.bg-red{background:linear-gradient(135deg,#be123c,#e11d48);}
+.career-header-wrap{
+  width:100%;
+}
+.career-section .section-header{
+  width:100%;
+}
+
+
+/* ========== CLASSROOM ========== */
+.classroom-section{
+  padding:45px;
+}
+
+.classroom-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+/*CLASSROOM CARD */
+.classroom-card{
+  background:#f9fafb;
+  padding:18px;
+  border-radius:8px;
+}
+
+/*IMAGE CSS — YAHI ADD KARNA THA */
+.classroom-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+/* TEXT */
+.classroom-card h4{
+  font-size:14px;
+  color:#2563eb;
+}
+
+.classroom-card h3{
+  font-size:18px;
+  margin:6px 0;
+}
+
+.classroom-card p{
+  font-size:14px;
+  color:#6b7280;
+}
+
+
+/* ========== STAFF ========== */
+.staff-section{padding:45px;}
+.staff-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+/* STAFF IMAGE */
+.staff-img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+.staff-card h3{font-size:18px;}
+.staff-card h4{font-size:14px;color:#2563eb;margin-bottom:8px;}
+.staff-card p{font-size:14px;color:#6b7280;}
+
+/* ========== FOOTER ========== */
+.footer{
+  background:#111827;
+  color:#d1d5db;
+  padding:40px 20px 20px;
+  text-align:center;
+}
+.footer h3{color:white;margin-bottom:8px;}
+.footer-tagline{font-size:14px;margin-bottom:15px;}
+.footer-links a{
+  color:#9ca3af;
+  display:block;
+  margin:4px 0;
+  text-decoration:none;
+}
+.footer-links a:hover{color:#f59e0b;}
+.footer-bottom{
+  border-top:1px solid #374151;
+  padding-top:15px;
+  margin-top:15px;
+  font-size:13px;
+}
+
